@@ -14,8 +14,9 @@ Since all pairs can be used for similarity measurements, the candidate pair is 1
 
 ## Score
 The motion similarity is scored on a 4-point scale for one pair.
+
 |Score  |Description                |
-|-------|:-------------------------:|
+|------:|:-------------------------:|
 |1      |utterly different motions  |
 |2      |little similar             |
 |3      |much similar               |
@@ -36,7 +37,7 @@ The similarity score for each pair is the average of scores collected from at le
 
 ## csv file
 |num	|query_name			    |cand_name			    |AMT_avg_score  |
-|-------|:---------------------:|:---------------------:|:-------------:|
+|------:|:---------------------:|:---------------------:|:-------------:|
 |1	    |S029C001P051R001A102	|S022C001P066R002A095	|1.1            |
 |2	    |S004C002P020R002A007	|S011C003P038R001A022	|1.4            |
 |3	    |S007C001P015R002A027	|S024C001P064R001A099	|1.2            |
@@ -47,7 +48,7 @@ The similarity score for each pair is the average of scores collected from at le
 
 ## Details (제거 예정)
 |start  |end    |bins       |
-|-------|:-----:|:---------:|
+|------:|:-----:|:---------:|
 |1.0 	|1.1    |1814 (max) |
 |1.1 	|1.2 	|1797       |
 |1.2 	|1.3 	|1688       |
