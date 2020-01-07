@@ -1,60 +1,58 @@
-# NTU_motion_sim_annotations
-NTU-RGB+D_motion_sim_annotations
-
-## Purpose
+# NTU RGB+D motion similarity annotations
 A motion similarity dataset with real-world videos to evaluate motion similarity.
 
 ## Data
 21394 pairs
 
 ## Details
-range           numbers
-start   end     bins
-1.0 	1.1 	1814 (max)
-1.1 	1.2 	1797
-1.2 	1.3 	1688
-1.3 	1.4 	1418
-1.4 	1.5 	1171
-1.5 	1.6 	972
-1.6 	1.7 	801
-1.7 	1.8 	645
-1.8 	1.9 	514
-1.9 	2.0 	342
-2.0 	2.1 	419
-2.1 	2.2 	303
-2.2 	2.3 	269
-2.3 	2.4 	255
-2.4 	2.5 	255
-2.5 	2.6 	237 (min)
-2.6 	2.7 	247
-2.7 	2.8 	259
-2.8	    2.9 	246
-2.9	    3.0 	243
-3.0	    3.1 	423
-3.1 	3.2 	413
-3.2 	3.3 	483
-3.3 	3.4 	560
-3.4 	3.5 	636
-3.5	    3.6 	799
-3.6 	3.7 	935
-3.7 	3.8 	956
-3.8 	3.9 	963
-3.9 	4.0 	1331
+|start  |end    |bins       |
+|-------|:-----:|:---------:|
+|1.0 	|1.1    |1814 (max) |
+|1.1 	|1.2 	|1797       |
+|1.2 	|1.3 	|1688       |
+|1.3 	|1.4 	|1418       |
+|1.4 	|1.5 	|1171       |
+|1.5 	|1.6 	|972        |
+|1.6 	|1.7 	|801        |
+|1.7 	|1.8 	|645        |
+|1.8 	|1.9 	|514        |
+|1.9 	|2.0 	|342        |
+|2.0 	|2.1 	|419        |
+|2.1 	|2.2 	|303        |
+|2.2 	|2.3 	|269        |
+|2.3 	|2.4 	|255        |
+|2.4 	|2.5 	|255        |
+|2.5 	|2.6 	|237 (min)  |
+|2.6 	|2.7 	|247        |
+|2.7 	|2.8 	|259        |
+|2.8	|2.9 	|246        |
+|2.9	|3.0 	|243        |
+|3.0	|3.1 	|423        |
+|3.1 	|3.2 	|413        |
+|3.2 	|3.3 	|483        |
+|3.3 	|3.4 	|560        |
+|3.4 	|3.5 	|636        |
+|3.5	|3.6 	|799        |
+|3.6 	|3.7 	|935        |
+|3.7 	|3.8 	|956        |
+|3.8 	|3.9 	|963        |
+|3.9 	|4.0 	|1331       |
 
 
-## Format
-csv file
-num	    query_name			    cand_name			    AMT_avg_score
-1	    S029C001P051R001A102	S022C001P066R002A095	1.1
-2	    S004C002P020R002A007	S011C003P038R001A022	1.4
-3	    S007C001P015R002A027	S024C001P064R001A099	1.222222222
-…	    …				        …				        …
-21392	S008C003P032R001A026	S010C002P013R002A009	1
-21393	S027C001P084R002A100	S003C001P002R001A027	1.181818182
-21394	S001C001P008R001A048	S011C003P038R001A048	3.272727273
+## csv file
+
+|num	|query_name			    |cand_name			    |AMT_avg_score  |
+|-------|:---------------------:|:---------------------:|:-------------:|
+|1	    |S029C001P051R001A102	|S022C001P066R002A095	|1.1            |
+|2	    |S004C002P020R002A007	|S011C003P038R001A022	|1.4            |
+|3	    |S007C001P015R002A027	|S024C001P064R001A099	|1.2            |
+|…	    |…				        |…				        |…              |
+|21392	|S008C003P032R001A026	|S010C002P013R002A009	|1              |
+|21393	|S027C001P084R002A100	|S003C001P002R001A027	|1.18           |
+|21394	|S001C001P008R001A048	|S011C003P038R001A048	|3.27           |
 
 ## Discription
-It was generated using the NTU RGB+D 120 dataset.
+It was generated using [the NTU RGB+D 120 dataset](http://rose1.ntu.edu.sg/datasets/actionrecognition.asp).
 We use RGB videos and 3D skeletal data of the dataset.
 While RGB videos, annotated through AMT by humans, was used to obtain ground truth the motion similarity.
 
