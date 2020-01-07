@@ -1,7 +1,7 @@
 # NTU RGB+D motion similarity annotations
 A motion similarity dataset with real-world videos to evaluate motion similarity.
 
-## Discription
+## Description
 It was generated using [the NTU RGB+D 120 dataset](http://rose1.ntu.edu.sg/datasets/actionrecognition.asp).
 We use RGB videos and 3D skeletal data of the dataset.
 While RGB videos, annotated through AMT by humans, was used to obtain ground truth the motion similarity.
@@ -12,19 +12,29 @@ The video pairs are composed of a sampling of two videos of 39 people per action
 Consequently, the total videos are 1638 videos (21 actions X 39 people X 2 videos). 
 Since all pairs can be used for similarity measurements, the candidate pair is 1,340,703 pairs (=1638 combination 2). -> 총 후보 pairs 1,340,703개
 
+## Score
+The motion similarity is scored on a 4-point scale for one pair.
+|Score  |Description                |
+|-------|:-------------------------:|
+|1      |utterly different motions  |
+|2      |little similar             |
+|3      |much similar               |
+|4      |same movements             |
+
+## AMT 수집
 We have obtained motion similarity scores measured by humans with AMT.
 One set consists of 1 query video and 10 candidate videos, forming 10 pairs.
 One task consists of 21 sets, thus, 210 sample pairs per task.
 We have created a total of 110 tasks and performed a survey based on the task to get the human to evaluate motion similarity.
-The motion similarity is scored on a 4-point scale for one pair, where 1 represents utterly different motions, 2 - little similar, 3 - much similar, and 4 - same movements.
 At this moment, we have collected data for 21394 pairs. 
-The similarity score for each pair is the average of scores collected from at least ten workers. 
+The similarity score for each pair is the average of scores collected from at least ten workers.
+
+예시 화면
 
 ## Data
 21394 pairs
 
 ## csv file
-
 |num	|query_name			    |cand_name			    |AMT_avg_score  |
 |-------|:---------------------:|:---------------------:|:-------------:|
 |1	    |S029C001P051R001A102	|S022C001P066R002A095	|1.1            |
@@ -35,7 +45,7 @@ The similarity score for each pair is the average of scores collected from at le
 |21393	|S027C001P084R002A100	|S003C001P002R001A027	|1.18           |
 |21394	|S001C001P008R001A048	|S011C003P038R001A048	|3.27           |
 
-## Details
+## Details (제거 예정)
 |start  |end    |bins       |
 |-------|:-----:|:---------:|
 |1.0 	|1.1    |1814 (max) |
