@@ -69,3 +69,8 @@ The motion similarity is scored on a 4-point scale for one pair.
 
 ## Contacts
 Sukhyun Cho (chosh90@snu.ac.kr)
+
+## Acknowledgments
+- This work was supported by Kakao and Kakao Brain corporations.
+
+- Portions of the research used [the NTU RGB+D 120 Action Recognition Dataset](http://rose1.ntu.edu.sg/datasets/actionrecognition.asp) made available by the ROSE Lab at the Nanyang Technological University, Singapore
