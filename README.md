@@ -1,27 +1,15 @@
 # NTU RGB+D motion similarity annotations
 A motion similarity dataset with real-world videos to evaluate motion similarity.
 
-The dataset using for model evaluation in our paper [A Body Part Embedding Model With Datasets for Measuring Human Motion Similarity in 2D](https://github.com/dade-ai/bpe-dev), ECCV 2020.
+The dataset using for model evaluation in the ECCV20 paper [_A Body Part Embedding Model With Datasets for Measuring Human Motion Similarity in 2D_](https://github.com/dade-ai/bpe-dev).
 
 ## Description
-It was generated using [the NTU RGB+D 120 dataset](http://rose1.ntu.edu.sg/datasets/actionrecognition.asp).
-We use RGB videos and 3D skeletal data of the dataset.
-While RGB videos, annotated through AMT by humans, was used to obtain ground truth the motion similarity.
+The annotations in this repository are generated on top of the [the NTU RGB+D 120 dataset](http://rose1.ntu.edu.sg/datasets/actionrecognition.asp). We have refined the dataset and adopted only a portion of the entire dataset. Specifically, we have removed the samples without skeletal annotations and then chose actions with large and precise movements. The RGB videos in the dataset are used to obtain the ground truth motion similarity from the AMT workers (as shown below): 
 
-We have refined the dataset and adopted only a portion of the entire dataset.
-Especially, we removed the samples without skeletal annotations and then chose 21 actions with large and precise movements.
-The video pairs are composed of a sampling of two videos of 39 people per action.
-Consequently, the total videos are 1638 videos (21 actions X 39 people X 2 videos). 
-Since all pairs can be used for similarity measurements, the candidate pair is 1,340,703 pairs (=1638 combination 2).
+<p align="center">
+  <img src="./figures/fig_instruction.jpg", width=800>
+</p>
 
-
-## AMT collection
-We have obtained motion similarity scores measured by humans with AMT.
-One set consists of 1 query video and 10 candidate videos, forming 10 pairs.
-One task consists of 21 sets, thus, 210 sample pairs per task.
-We have created a total of 100 tasks and performed a survey based on the task to get the human to evaluate motion similarity.
-At this moment, we have collected data for 20093 pairs. 
-The similarity score for each pair is the average of scores collected from at least ten workers.
 
 ### Score
 The motion similarity is scored on a 4-point scale for one pair.
@@ -33,13 +21,7 @@ The motion similarity is scored on a 4-point scale for one pair.
 |3      |much similar               |
 |4      |same movements             |
 
-### Collection page
-<p align="center">
-  <img src="./figures/fig_instruction.jpg", width=800>
-</p>
-
-
-## Data
+## Data statistics
 
 ### Histogram
 <p align="center", width=10>
