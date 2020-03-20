@@ -22,7 +22,7 @@ The motion similarity is scored on a 4-point scale for one pair.
 |4      |same movements             |
 
 ## Data statistics
-We have collected $20{,}093$ pairs through AMT. The overall average similarity score of all pairs is $2.26$. The average score of pairs with the same action category is $3.36$, and with a different action category is $1.43$.
+We have collected 20093 pairs through AMT. The overall average similarity score of all pairs is 2.26. The average score of pairs with the same action category is 3.36, and with a different action category is 1.43.
 ### The histogram of the total collected scores.
 <p align="center", width=10>
   <img src="./figures/fig_histogram.jpg", width=500>
@@ -36,7 +36,7 @@ The blue bar is the average score of the sample pairs composed of the same actio
 </p>
 
 ## Data cleansing
-We have noticed that some skeletal data of NTU RGB+D $120$ is annotated imprecisely. 
+We have noticed that some skeletal data of NTU RGB+D 120 is annotated imprecisely. 
 Miss-annotated files can be classified into three cases.
 1. The case where a skeleton representing human and a skeleton representing non-human objects are stored together, as shown on the left side of (a). In this case, the problem is that we cannot identify a correct human skeleton without looking at the original video.
 2. The left side of (b) indicates that the skeleton is incorrectly located.
