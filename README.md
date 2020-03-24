@@ -35,21 +35,6 @@ The blue bar is the average score of the sample pairs composed of the same actio
   <img src="./figures/fig_annotation_actions.jpg", width=700>
 </p>
 
-## Data cleansing
-We have noticed that some skeletal data of NTU RGB+D 120 is annotated imprecisely. 
-Miss-annotated files can be classified into three cases.
-1. The case where a skeleton representing human and a skeleton representing non-human objects are stored together, as shown on the left side of (a). In this case, the problem is that we cannot identify a correct human skeleton without looking at the original video.
-2. The left side of (b) indicates that the skeleton is incorrectly located.
-3. There are some cases where the joints have invalid annotations, as represented on the left side of (c).
-
-To cope with these issues, we have used our reproduction ($AP^L=0.709$ on [COCO 2017](http://cocodataset.org/#download) valid set) of [MultiPoseNet](https://arxiv.org/abs/1807.04067) to generate new 2D joint annotations.
-
-As a result, more accurate skeleton data is obtained and shown on the right side of (a), (b) and (c).
-
-<p align="center">
-  <img src="./figures/fig_cleansing.jpg">
-</p>
-
 ## Csv file example
 |num	|sample1			    |sample2			    |AMT_score  |
 |------:|:---------------------:|:---------------------:|:-------------:|
@@ -61,10 +46,26 @@ As a result, more accurate skeleton data is obtained and shown on the right side
 |20092	|S027C001P084R002A100	|S003C001P002R001A027	|1.18           |
 |20093	|S001C001P008R001A048	|S011C003P038R001A048	|3.27           |
 
-## Reproduced skeleton data
+## Data cleansing
+We have noticed that some skeletal data of NTU RGB+D 120 is annotated imprecisely. 
+Miss-annotated files can be classified into three cases.
+1. The case where a skeleton representing human and a skeleton representing non-human objects are stored together, as shown on the left side of (a). In this case, the problem is that we cannot identify a correct human skeleton without looking at the original video.
+2. The left side of (b) indicates that the skeleton is incorrectly located.
+3. There are some cases where the joints have invalid annotations, as represented on the left side of (c).
 
-   ```
-    refined_skeleton
+To cope with these issues, we have used our reproduction ($AP^L=0.709$ on [COCO 2017](http://cocodataset.org/#download) valid set) of [MultiPoseNet](https://arxiv.org/abs/1807.04067) to generate new 2D joint annotations.
+
+As a result, more accurate skeleton data is obtained and shown on the right side of (a), (b) and (c). The reproduced skeleton data is included as 'refined_skeleton.zip'.
+
+<p align="center">
+  <img src="./figures/fig_cleansing.jpg">
+</p>
+
+## Reproduced skeleton data
+We also include a sample json file and a example python file. The json file format is similar to coco keypoint data format.
+
+   ```   
+    refined_skeleton dir (categorized by action number)
     |-- 007
         |-- S001C001P004R001A007.json
         |-- S001C001P005R002A007.json
@@ -75,8 +76,6 @@ As a result, more accurate skeleton data is obtained and shown on the right side
     |-- ...
 
    ```
-### json structure
-넣을까 말까
 
 ## Contacts
 Sukhyun Cho (chosh90@snu.ac.kr)
