@@ -48,12 +48,12 @@ The blue bar is the average score of the sample pairs composed of the same actio
 
 ## Data cleansing
 We have noticed that some skeletal data of NTU RGB+D 120 is annotated imprecisely. 
-Miss-annotated files can be classified into three cases.
-1. The case where a skeleton representing human and a skeleton representing non-human objects are stored together, as shown on the left side of (a). In this case, the problem is that we cannot identify a correct human skeleton without looking at the original video.
-2. The left side of (b) indicates that the skeleton is incorrectly located.
-3. There are some cases where the joints have invalid annotations, as represented on the left side of (c).
+Miss-annotated files can be classified into three cases:
+  1. A skeleton representing human and a skeleton representing non-human objects are stored together, as shown on the left side of (a). In this case, the problem is that we cannot identify a correct human skeleton without looking at the original video.
+  2. Skeleton is incorrectly located (left side of (b)).
+  3. Invalid joints annotations (left side of (c)).
 
-To cope with these issues, we have used our reproduction ($AP^L=0.709$ on [COCO 2017](http://cocodataset.org/#download) valid set) of [MultiPoseNet](https://arxiv.org/abs/1807.04067) to generate new 2D joint annotations.
+To cope with these issues, we have used our reproduction (AP_L=0.709 on [COCO 2017](http://cocodataset.org/#download) valid set) of [MultiPoseNet](https://arxiv.org/abs/1807.04067) to generate new 2D joint annotations.
 
 As a result, more accurate skeleton data is obtained and shown on the right side of (a), (b) and (c). The reproduced skeleton data is included as 'refined_skeleton.zip'.
 
