@@ -1,7 +1,7 @@
 # NTU RGB+D motion similarity annotations
 A motion similarity dataset with real-world videos to evaluate motion similarity.
 
-The dataset using for model evaluation in the ACCESS paper [_A Body Part Embedding Model With Datasets for Measuring Human Motion Similarity in 2D_](https://github.com/chico2121/bpe).
+The dataset using for model evaluation in the IEEE Access paper [_A Body Part Embedding Model With Datasets for Measuring Human Motion Similarity in 2D_](https://chico2121.github.io/bpe/).
 
 ## Description
 The annotations in this repository are generated on top of the [the NTU RGB+D 120 dataset](http://rose1.ntu.edu.sg/datasets/actionrecognition.asp). We have refined the dataset and adopted only a portion of the entire dataset. Specifically, we have removed the samples without skeletal annotations and then chose actions with large and precise movements. The RGB videos in the dataset are used to obtain the ground truth motion similarity from the AMT workers (as shown below): 
