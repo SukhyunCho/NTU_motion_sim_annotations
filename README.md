@@ -1,7 +1,7 @@
 # NTU RGB+D motion similarity annotations
-A motion similarity dataset with real-world videos to evaluate motion similarity.
+A motion similarity dataset with real-world videos to evaluate motion similarity. See [project page](https://chico2121.github.io/bpe/) for more details.
 
-The dataset using for model evaluation in the IEEE Access paper [_A Body Part Embedding Model With Datasets for Measuring Human Motion Similarity in 2D_](https://chico2121.github.io/bpe/).
+The dataset is used for model evaluation in the IEEE Access paper [_A Body Part Embedding Model With Datasets for Measuring Human Motion Similarity in 2D_](https://ieeexplore.ieee.org/document/9366759).
 
 ## Description
 The annotations in this repository are generated on top of the [the NTU RGB+D 120 dataset](http://rose1.ntu.edu.sg/datasets/actionrecognition.asp). We have refined the dataset and adopted only a portion of the entire dataset. Specifically, we have removed the samples without skeletal annotations and then chose actions with large and precise movements. The RGB videos in the dataset are used to obtain the ground truth motion similarity from the AMT workers (as shown below): 
@@ -84,3 +84,17 @@ Sukhyun Cho (chosh90@snu.ac.kr)
 - This work was supported by Kakao and Kakao Brain corporations.
 
 - Portions of the research used [the NTU RGB+D 120 Action Recognition Dataset](http://rose1.ntu.edu.sg/datasets/actionrecognition.asp) made available by the ROSE Lab at the Nanyang Technological University, Singapore
+
+## Citation
+If you use this code for your research, please cite the paper:
+```
+@ARTICLE{9366759,
+  author={J. {Park} and S. {Cho} and D. {Kim} and O. {Bailo} and H. {Park} and S. {Hong} and J. {Park}},
+  journal={IEEE Access}, 
+  title={A Body Part Embedding Model With Datasets for Measuring 2D Human Motion Similarity}, 
+  year={2021},
+  volume={9},
+  number={},
+  pages={36547-36558},
+  doi={10.1109/ACCESS.2021.3063302}}
+```
